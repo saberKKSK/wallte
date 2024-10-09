@@ -27,7 +27,6 @@ public class BillServiceImpl extends ServiceImpl<BillMapper, BillEntity> impleme
     }
 
     public boolean addBills(BillVO billVO) {
-
         int insert = billMapper.insertBills(convertToEntity(billVO));
         return insert == 1;
     }
